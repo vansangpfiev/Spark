@@ -1,0 +1,37 @@
+Manifest-Version: 1.0
+Export-Package: com.mongodb.async.client;version="3.4.0";uses:="com.mo
+ ngodb,com.mongodb.annotations,com.mongodb.async,com.mongodb.bulk,com.
+ mongodb.client,com.mongodb.client.model,com.mongodb.client.result,com
+ .mongodb.connection,com.mongodb.event,org.bson,org.bson.codecs.config
+ uration,org.bson.conversions",com.mongodb.async.client.gridfs;version
+ ="3.4.0";uses:="com.mongodb,com.mongodb.annotations,com.mongodb.async
+ ,com.mongodb.async.client,com.mongodb.client.gridfs.model,com.mongodb
+ .client.model,org.bson,org.bson.conversions,org.bson.types",com.mongo
+ db.async.client.gridfs.helpers;version="3.4.0";uses:="com.mongodb.asy
+ nc.client.gridfs"
+Bundle-SymbolicName: org.mongodb.driver-async
+Bundle-Version: 3.4.0
+Bundle-Name: mongodb-driver-async
+Bundle-ManifestVersion: 2
+Bnd-LastModified: 1480255881000
+Import-Package: com.mongodb;version="[3.4,4)",com.mongodb.annotations;
+ version="[3.4,4)",com.mongodb.assertions;version="[3.4,4)",com.mongod
+ b.async;version="[3.4,4)",com.mongodb.binding;version="[3.4,4)",com.m
+ ongodb.bulk;version="[3.4,4)",com.mongodb.client;version="[3.4,4)",co
+ m.mongodb.client.gridfs.codecs;version="[3.4,4)",com.mongodb.client.g
+ ridfs.model;version="[3.4,4)",com.mongodb.client.model;version="[3.4,
+ 4)",com.mongodb.client.model.geojson.codecs;version="[3.4,4)",com.mon
+ godb.client.result;version="[3.4,4)",com.mongodb.connection;version="
+ [3.4,4)",com.mongodb.connection.netty;version="[3.4,4)",com.mongodb.d
+ iagnostics.logging;version="[3.4,4)",com.mongodb.event;version="[3.4,
+ 4)",com.mongodb.internal;version="[3.4,4)",com.mongodb.internal.async
+ ;version="[3.4,4)",com.mongodb.management;version="[3.4,4)",com.mongo
+ db.operation;version="[3.4,4)",io.netty.channel;version="[4.1,5)",io.
+ netty.channel.nio;version="[4.1,5)",io.netty.util.concurrent;version=
+ "[4.1,5)",org.bson;version="[3.4,4)",org.bson.assertions;version="[3.
+ 4,4)",org.bson.codecs;version="[3.4,4)",org.bson.codecs.configuration
+ ;version="[3.4,4)",org.bson.conversions;version="[3.4,4)",org.bson.ty
+ pes;version="[3.4,4)"
+Created-By: 1.8.0_66 (Oracle Corporation)
+Tool: Bnd-2.1.0.20130426-122213
+

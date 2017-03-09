@@ -1,0 +1,2 @@
+167	3609198	3140177	3180select SUM(measurement)  from indexes WHERE meterid < 1 AND measurement > 0.6	211	3262	3473
+select SUM(measurement)  from indexes WHERE meterid < 1 AND measurement > 0.6	179	3187	3366
