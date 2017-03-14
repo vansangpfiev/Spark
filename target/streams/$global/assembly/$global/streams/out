@@ -1,15 +1,15 @@
 [0m[[0minfo[0m] [0mIncluding from cache: mongodb-driver-async-3.4.0.jar[0m
-[0m[[0minfo[0m] [0mIncluding from cache: mongodb-driver-core-3.4.0.jar[0m
-[0m[[0minfo[0m] [0mIncluding from cache: bson-3.4.0.jar[0m
-[0m[[0minfo[0m] [0mIncluding from cache: mongo-scala-bson_2.11-1.2.1.jar[0m
 [0m[[0minfo[0m] [0mIncluding from cache: mongo-scala-driver_2.11-1.2.1.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: mongodb-driver-core-3.4.0.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: mongo-scala-bson_2.11-1.2.1.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: bson-3.4.0.jar[0m
 [0m[[0minfo[0m] [0mIncluding from cache: scala-library-2.11.8.jar[0m
 [0m[[0mdebug[0m] [0mCalculate mappings...[0m
 [0m[[0minfo[0m] [0mChecking every *.class/*.jar file's SHA-1.[0m
 [0m[[0minfo[0m] [0mMerging files...[0m
 [0m[[33mwarn[0m] [0mMerging 'META-INF/MANIFEST.MF' with strategy 'discard'[0m
 [0m[[33mwarn[0m] [0mStrategy 'discard' was applied to a file[0m
-[0m[[0minfo[0m] [0mSHA-1: 6bcbc796dba70a71cabefecc9df4387add41d8f6[0m
+[0m[[0minfo[0m] [0mSHA-1: 945aa7459717add69e9877fa885490e8623da1f6[0m
 [0m[[0minfo[0m] [0mPackaging /home/paladin/Desktop/BigDataIndexing/spark/target/scala-2.11/Indexed-assembly-1.0.jar ...[0m
 [0m[[0mdebug[0m] [0mInput file mappings:[0m
 [0m[[0mdebug[0m] [0m	buildinfo/BuildInfo$.class[0m
@@ -22,6 +22,8 @@
 [0m[[0mdebug[0m] [0m	  /home/paladin/Desktop/BigDataIndexing/spark/target/streams/$global/assemblyOption/$global/streams/assembly/d6260bca50d5a6cf0beb817cb48cf9c6c2cf27f4_dir/com/hadas/index/ExtendedString.class[0m
 [0m[[0mdebug[0m] [0m	com/hadas/index/FilterExpression.class[0m
 [0m[[0mdebug[0m] [0m	  /home/paladin/Desktop/BigDataIndexing/spark/target/streams/$global/assemblyOption/$global/streams/assembly/d6260bca50d5a6cf0beb817cb48cf9c6c2cf27f4_dir/com/hadas/index/FilterExpression.class[0m
+[0m[[0mdebug[0m] [0m	com/hadas/index/Filters.class[0m
+[0m[[0mdebug[0m] [0m	  /home/paladin/Desktop/BigDataIndexing/spark/target/streams/$global/assemblyOption/$global/streams/assembly/d6260bca50d5a6cf0beb817cb48cf9c6c2cf27f4_dir/com/hadas/index/Filters.class[0m
 [0m[[0mdebug[0m] [0m	com/hadas/index/Helpers$.class[0m
 [0m[[0mdebug[0m] [0m	  /home/paladin/Desktop/BigDataIndexing/spark/target/streams/$global/assemblyOption/$global/streams/assembly/d6260bca50d5a6cf0beb817cb48cf9c6c2cf27f4_dir/com/hadas/index/Helpers$.class[0m
 [0m[[0mdebug[0m] [0m	com/hadas/index/Helpers$DocumentObservable$$anonfun$1.class[0m

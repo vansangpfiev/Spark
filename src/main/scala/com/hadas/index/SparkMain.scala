@@ -35,6 +35,7 @@ object SparkMain {
     val queries: Queries = new Queries(tbName)
     
     val queryString = queries.getQuery(args(0)) 
+    val filters: Filters = new Filters()
     
     val spark = SparkSession
       .builder()
@@ -44,12 +45,12 @@ object SparkMain {
     val sqlContext = spark.sqlContext
     val mongoClient: MongoClient = MongoClient("mongodb://localhost") //:27017")
     val mongoIndex: MongoIndex = new MongoIndex(mongoClient)
-    val filters = Array(new FilterExpression("measurement", "0.6", new RelOperator(RelOperatorType.GREATER)), new FilterExpression("meterid", "1", new RelOperator(RelOperatorType.LOWER)))
+    val filter = filters.getFilter(args(0))
     val dir = args(1)+"meterdata"
 
     val t1 = DateTime.now(DateTimeZone.UTC).getMillis()
 
-    val names = mongoIndex.getFileNames(dir, filters)
+    val names = mongoIndex.getFileNames(dir, filter)
 
     val t2 = DateTime.now(DateTimeZone.UTC).getMillis()
     val t_MongoExec = t2 - t1 
