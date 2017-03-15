@@ -11,10 +11,10 @@ class Queries(filepath: String) {
 
   val query5 = "select id, meterid, date, measurement  from " + filepath + " where meterid > 0.3 and id > 5 and id < 25000 order by meterid"
 
-  val query6 = "select sum(hr)+94.96 from (select sum(measurement))*0.1114 as hr from " + filepath + " where id = 1 and extract(hour from date)) in (1,2,3,4,5,6,7,15,16,17) union all select sum(measurement)*0.16 as hr from hdfs://localhost:54310/data-v2/file0.csv where meterid = 1 and extract(hour from date) not in (1,2,3,4,5,6,7,15,16,17))"
+  val query6 = "select sum(hr)+94.96 from (select sum(measurement)*0.1114 as hr from " + filepath + " where meterid = 1 and hour(date) in (1,2,3,4,5,6,7,15,16,17) union all select sum(measurement)*0.16 as hr from  " + filepath + " where meterid = 1 and hour(date) not in (1,2,3,4,5,6,7,15,16,17))"
 
-  val query7 = "select meterid, sum(hr) from (select meterid, sum(measurement)*0.1114+94.96 as hr from " + filepath + " where meterid > 0 and meterid < 15000 and extract(hour from date) in (1,2,3,4,5,6,7,15,16,17) group by meterid union all select meterid, sum(measurement)*0.16 as hr from " + filepath + "  where meterid > 0 and meterid < 15000 and extract(hour from date) not in (1,2,3,4,5,6,7,15,16,17) group by meterid) group by meterid"
-  
+  val query7 = "select meterid, sum(hr) from (select meterid, sum(measurement)*0.1114+94.96 as hr from " + filepath + " where meterid > 0 and meterid < 300 and hour(date) in (1,2,3,4,5,6,7,15,16,17) group by meterid union all select meterid, sum(measurement)*0.16 as hr from " + filepath + "  where meterid > 0 and meterid < 300 and hour(date) not in (1,2,3,4,5,6,7,15,16,17) group by meterid) group by meterid"
+
  def getQuery(queryType: String): String={
     if(queryType == "query1"){
       return query1
