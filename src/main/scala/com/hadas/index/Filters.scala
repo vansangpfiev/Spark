@@ -6,7 +6,7 @@ class Filters {
   val filter3 = Array(new FilterExpression("measurement", "0.6", new RelOperator(RelOperatorType.GREATER)), new FilterExpression("meterid", "1", new RelOperator(RelOperatorType.LOWER)))
   val filter4 = Array(new FilterExpression("measurement", "0.6", new RelOperator(RelOperatorType.GREATER)), new FilterExpression("meterid", "1", new RelOperator(RelOperatorType.LOWER)))
   val filter5 = Array(new FilterExpression("measurement", "0.6", new RelOperator(RelOperatorType.GREATER)), new FilterExpression("meterid", "1", new RelOperator(RelOperatorType.LOWER)))
-  val filter6 = Array(new FilterExpression("measurement", "0.6", new RelOperator(RelOperatorType.GREATER)), new FilterExpression("meterid", "1", new RelOperator(RelOperatorType.LOWER)))
+  val filter6 = Array(new FilterExpression("measurement", "0.4", new RelOperator(RelOperatorType.GREATER)))
   val filter7 = Array(new FilterExpression("measurement", "0.6", new RelOperator(RelOperatorType.GREATER)), new FilterExpression("meterid", "1", new RelOperator(RelOperatorType.LOWER)))
   
   def getFilter(queryType: String): Array[FilterExpression]={

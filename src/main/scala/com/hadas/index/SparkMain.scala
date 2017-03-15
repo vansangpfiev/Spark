@@ -84,9 +84,10 @@ object SparkMain {
     val results = sqlContext.sql(queryString)
 
     val t4 = DateTime.now(DateTimeZone.UTC).getMillis()
-    val t_SparkExec = t4 - t3
+    
     results.show()
-      
+    val t_SparkExec = t4 - t3
+    
     val writer = new PrintWriter(new FileOutputStream(new File("/home/paladin/Desktop/BigDataIndexing/spark/queries_Log.txt"), true))
     writer.append(args(0) + "\t" +t_MongoExec.toString() + "\t" + t_SparkExec.toString() + "\t" +(t_MongoExec + t_SparkExec).toString() +"\n")
     writer.close()
